@@ -4,7 +4,7 @@
 
 .info,
 .image {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   min-height: 23em;
   width: 50%;
   display: flex;
@@ -112,14 +112,12 @@
 
 @media (max-width: 900px) {
   .hero-container {
-    /* width: 70%; */
-    /* border: 1px solid magenta; */
     flex-direction: column-reverse;
     align-items: center;
   }
   .info,
   .image {
-    width: 150%;
+    width: 100%;
     min-height: auto;
   }
   .info {
@@ -131,9 +129,11 @@
 }
 
 @media (max-width: 600px) {
-  .info,
+  .wrapper{
+    margin: 0;
+  }
   .image {
-    width: 150%;
+    align-items: center;
   }
   .image img {
     width: 19em;
