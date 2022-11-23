@@ -1,0 +1,125 @@
+.navbar-container {
+  margin: 1em 0.5em 3em 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-container .logo {
+  font-weight: 600;
+  color: #153462;
+  text-decoration: none;
+}
+
+.navbar-container .logo:hover {
+  cursor: pointer;
+}
+
+.ham-burger {
+  display: none;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.7em;
+  right: 1em;
+}
+
+/*  NAVBAR */
+
+nav {
+  width: 15%;
+  /* display: none; */
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #153462;
+  font-weight: 400;
+}
+
+/* SOCIALS */
+
+.social i {
+  /* display: none; */
+  margin-left: 1em;
+  font-size: 1.5rem;
+  color: #153462;
+}
+
+.social i:hover,
+nav a:hover {
+  color: #0009;
+  cursor: pointer;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  transform-origin: top center;
+  top: 1em;
+  left: 1em;
+  height: 4em;
+  animation: hang 3s ease-in-out infinite;
+}
+
+@keyframes hang {
+  0% {
+    transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(30deg);
+  }
+  100% {
+    transform: rotateZ(-30deg);
+  }
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+@media (max-width: 1300px) {
+  nav {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ham-burger {
+    display: block;
+  }
+  nav {
+    margin-bottom: 2.5em;
+  }
+  .logo {
+    width: 100%;
+  }
+  nav {
+    width: 60%;
+  }
+  nav,
+  .social {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .logo-margin {
+    margin-bottom: 2.5em;
+  }
+}

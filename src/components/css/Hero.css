@@ -1,0 +1,144 @@
+.hero-container {
+  display: flex;
+}
+
+.info,
+.image {
+  /* border: 1px solid red; */
+  min-height: 23em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  position: absolute;
+  width: 30em;
+}
+
+.info {
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: var(--secondary-color);
+}
+
+.image {
+  align-items: flex-end;
+}
+
+.info h1 {
+  /* margin-bottom: 0.2em; */
+  font-weight: 800;
+  max-width: 7em;
+  font-size: 7rem;
+  line-height: 0.9em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #000;
+  background: url("../../../public/images/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 40s linear infinite;
+}
+
+.info p {
+  margin-bottom: 0.5em;
+  padding-left: 0.3em;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.info button {
+  position: relative;
+  padding: 0.6em 1.5em;
+  border: 1px solid #474306;
+  border-radius: 6px;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.info button:hover {
+  cursor: pointer;
+}
+
+.info button::after {
+  transition-duration: 1s;
+  content: "";
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background-color: var(--ternary-color);
+  z-index: -1;
+}
+
+/* ANIMATIONS */
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+/* -------------------------- MEDAI QUERIES -------------------------- */
+
+@media (max-width: 1240px) {
+  .info {
+    padding-top: 2em;
+    justify-content: flex-start;
+  }
+  .image img {
+    width: 25em;
+  }
+  .info h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .image img {
+    width: 21em;
+  }
+  .info h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    /* width: 70%; */
+    /* border: 1px solid magenta; */
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .info,
+  .image {
+    width: 150%;
+    min-height: auto;
+  }
+  .info {
+    justify-content: flex-start;
+  }
+  .image {
+    height: 18em;
+  }
+}
+
+@media (max-width: 600px) {
+  .info,
+  .image {
+    width: 150%;
+  }
+  .image img {
+    width: 19em;
+  }
+  .info h1 {
+    font-size: 3.5rem;
+  }
+}
