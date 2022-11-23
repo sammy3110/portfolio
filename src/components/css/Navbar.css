@@ -25,7 +25,7 @@
 /*  NAVBAR */
 
 nav {
-  width: 15%;
+  width: 25%;
   /* display: none; */
 }
 
@@ -93,9 +93,15 @@ nav a:hover {
 
 @media (max-width: 1300px) {
   nav {
-    width: 30%;
+    width: 40%;
   }
 }
+
+/* @media (max-width: 1300px) {
+  nav {
+    width: 30%;
+  }
+} */
 
 @media (max-width: 600px) {
   .navbar-container {
@@ -112,7 +118,7 @@ nav a:hover {
     width: 100%;
   }
   nav {
-    width: 60%;
+    width: 90%;
   }
   nav,
   .social {
@@ -124,6 +130,6 @@ nav a:hover {
   }
 
   .logo-margin {
-    margin-bottom: 2.5em;
+    margin-bottom: 3.5em;
   }
 }

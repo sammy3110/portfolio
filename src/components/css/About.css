@@ -1,0 +1,87 @@
+.about-container .info {
+  /* border: 1px solid red; */
+  /* padding: 1em; */
+  display: flex;
+}
+.info .info-one,
+.info .info-two {
+  /* border: 1px solid blue; */
+  min-height: 20em;
+  width: 100%;
+
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .info-two p:first-child {
+  margin-bottom: 2em;
+}
+
+.info-one span,
+.info-two span {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.info-one .beer {
+  cursor: url("../../../public/images/beer.png") 20 20, default;
+}
+
+.info-one .app {
+  cursor: url("../../../public/images/app.png") 20 20, default;
+}
+
+.info-two .anime {
+  cursor: url("../../../public/images/naruto.png") 30 50, default;
+}
+
+.info-one p,
+.info-two p {
+  /* border: 1px solid red; */
+  line-height: 1.7em;
+  max-width: 70%;
+}
+
+@media (max-width: 1100px) {
+    .heading {
+        margin-bottom: 2em !important;
+    }
+    .about-container .info {
+        flex-direction: column;
+    }
+    .info .info-one,
+    .info .info-two {
+        margin-bottom: 1em;
+        min-height: 10em;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .heading h1 {
+        font-size: 3rem !important;
+    }
+    .heading h2 {
+        font-size: 2rem !important;
+    }
+    .info .info-one {
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading h1 {
+        font-size: 2.5rem !important;
+    }
+    .heading h2 {
+        font-size: 1.7rem !important;
+    }
+    .info-one p, .info-two p {
+        max-width: 95%;
+        font-size: .96rem;
+    }
+}

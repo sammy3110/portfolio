@@ -34,6 +34,12 @@ const Navbar = () => {
           <li>
             <a href="#work">Work</a>
           </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
       <div ref={social} className="social">

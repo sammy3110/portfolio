@@ -2,8 +2,8 @@
   display: flex;
 }
 
-.info,
-.image {
+.hero-container .info,
+.hero-container .image {
   /* border: 1px solid red; */
   min-height: 23em;
   width: 50%;
@@ -11,26 +11,26 @@
   flex-direction: column;
 }
 
-.image {
+.hero-container .image {
   position: relative;
 }
 
-.image img {
+.hero-container .image img {
   position: absolute;
   width: 30em;
 }
 
-.info {
+.hero-container .info {
   align-items: flex-start;
   justify-content: flex-end;
   color: var(--secondary-color);
 }
 
-.image {
+.hero-container .image {
   align-items: flex-end;
 }
 
-.info h1 {
+.hero-container .info h1 {
   /* margin-bottom: 0.2em; */
   font-weight: 800;
   max-width: 7em;
@@ -44,14 +44,14 @@
   animation: back 40s linear infinite;
 }
 
-.info p {
+.hero-container .info p {
   margin-bottom: 0.5em;
   padding-left: 0.3em;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.info button {
+.hero-container .info button {
   position: relative;
   padding: 0.6em 1.5em;
   border: 1px solid #474306;
@@ -60,11 +60,11 @@
   background-color: transparent;
 }
 
-.info button:hover {
+.hero-container .info button:hover {
   cursor: pointer;
 }
 
-.info button::after {
+.hero-container .info button::after {
   transition-duration: 1s;
   content: "";
   position: absolute;
@@ -89,23 +89,23 @@
 /* -------------------------- MEDAI QUERIES -------------------------- */
 
 @media (max-width: 1240px) {
-  .info {
+  .hero-container .info {
     padding-top: 2em;
     justify-content: flex-start;
   }
-  .image img {
+  .hero-container .image img {
     width: 25em;
   }
-  .info h1 {
+  .hero-container .info h1 {
     font-size: 6rem;
   }
 }
 
 @media (max-width: 1080px) {
-  .image img {
+  .hero-container .image img {
     width: 21em;
   }
-  .info h1 {
+  .hero-container .info h1 {
     font-size: 4rem;
   }
 }
@@ -115,15 +115,15 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  .info,
-  .image {
+  .hero-container .info,
+  .hero-container .image {
     width: 100%;
     min-height: auto;
   }
-  .info {
+  .hero-container .info {
     justify-content: flex-start;
   }
-  .image {
+  .hero-container .image {
     height: 18em;
   }
 }
@@ -131,14 +131,15 @@
 @media (max-width: 600px) {
   .wrapper{
     margin: 0;
+    margin-bottom: 3em;
   }
-  .image {
+  .hero-container .image {
     align-items: center;
   }
-  .image img {
+  .hero-container .image img {
     width: 19em;
   }
-  .info h1 {
+  .hero-container .info h1 {
     font-size: 3.5rem;
   }
 }
