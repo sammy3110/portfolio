@@ -4,7 +4,7 @@
 
 .info,
 .image {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   min-height: 23em;
   width: 50%;
   display: flex;
