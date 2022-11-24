@@ -1,0 +1,70 @@
+.footer-container {
+  border-top: 2px solid #000;
+  padding: 1em 0 0 0;
+  margin-bottom: 0;
+}
+
+.footer-container img {
+  height: 1.5em;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .top-info p {
+  max-width: 20em;
+}
+
+.footer-container .footer-top {
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+}
+
+.footer-container .top-title {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container .icon {
+  display: flex;
+}
+
+.footer-container .icon i {
+  font-size: 1.1rem;
+  margin-right: .5em;
+}
+
+.footer-container .top-email {
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 0.5em;
+}
+
+.footer-container .top-email a,
+.footer-container .top-email p {
+  font-family: "Fira Code", monospace;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-container .footer-bottom {
+  margin-bottom: 1em;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  color: #0009;
+}
+
+/* -------------- MEDIA QUERIES -------------- */
+
+@media (max-width: 600px) {
+  .footer-container .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container .top-info {
+    margin-bottom: 2em;
+  }
+}
