@@ -17,10 +17,10 @@ const Project = ({ project }) => {
           <p>{project.desc}</p>
         </div>
         <div className="project-links">
-          <a target={"_blank"} href={project.git}>
+          <a rel="noreferrer" target={"_blank"} href={project.git}>
             <i className="fa-brands fa-github"></i>
           </a>
-          <a target={"_blank"} href={project.live}>
+          <a rel="noreferrer" target={"_blank"} href={project.live}>
             <i className="fa-solid fa-square-arrow-up-right"></i>
           </a>
         </div>

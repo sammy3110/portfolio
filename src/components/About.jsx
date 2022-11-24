@@ -23,7 +23,7 @@ const About = () => {
         <div className="info-two">
           <p>
             I’ve been obsessed with tech and digging deeper into what interests
-            me. I work at a tech company in Chennai, India. I graduated two
+            me. Currently, working at a tech company in Chennai, India; graduated two
             years ago &amp; I love <span className="anime">Anime.</span>
           </p>
           <p>~ Flow is not always necessary.</p>
