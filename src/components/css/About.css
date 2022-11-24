@@ -4,7 +4,7 @@
   display: flex;
   background: url("../../../public/images/code.png");
   background-position: 0 0;
-  animation: back 50s linear infinite;
+  animation: codeMove 50s linear infinite;
 }
 
 .info .info-one,
@@ -35,10 +35,6 @@
   cursor: url("../../../public/images/beer.png") 20 20, default;
 }
 
-.info-one .app {
-  cursor: url("../../../public/images/app.png") 20 20, default;
-}
-
 .info-two .anime {
   cursor: url("../../../public/images/naruto.png") 30 50, default;
 }
@@ -52,7 +48,7 @@
 
 /* Keyframes */
 
-@keyframes back {
+@keyframes codeMove {
   100% {
     background-position: -2000px 0;
   }

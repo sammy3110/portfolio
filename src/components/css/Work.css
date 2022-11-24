@@ -1,0 +1,9 @@
+.work-container .heading {
+  margin-bottom: 5em;
+}
+
+.work-container .project-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

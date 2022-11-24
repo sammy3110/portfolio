@@ -58,10 +58,11 @@
   border-radius: 6px;
   font-weight: 400;
   background-color: transparent;
+  color: transparent;
 }
 
 .hero-container .info button:hover {
-  cursor: pointer;
+  cursor: url("../../../public/images/resume.png") 30 15, pointer;
 }
 
 .hero-container .info button::after {
@@ -99,6 +100,12 @@
   .hero-container .info h1 {
     font-size: 6rem;
   }
+  .hero-container .info button {
+    color: #000;
+  }
+  .hero-container .info button:hover {
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -129,7 +136,7 @@
 }
 
 @media (max-width: 600px) {
-  .wrapper{
+  .wrapper {
     margin: 0;
     margin-bottom: 3em;
   }

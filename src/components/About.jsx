@@ -17,15 +17,14 @@ const About = () => {
             a self-taught web-developer. I can develop responsive websites from
             scratch and raise them into modern creative user-friendly web
             experiences. I also do a little content writing. I'm currently,
-            Learning <span className="app">app</span> development.
+            Learning app development.
           </p>
         </div>
         <div className="info-two">
           <p>
             I’ve been obsessed with tech and digging deeper into what interests
             me. I work at a tech company in Chennai, India. I graduated two
-            years ago. I like to crafts responsive websites where technologies
-            meet creativity &amp; I love <span className="anime">Anime.</span>
+            years ago &amp; I love <span className="anime">Anime.</span>
           </p>
           <p>~ Flow is not always necessary.</p>
         </div>

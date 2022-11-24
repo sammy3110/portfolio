@@ -1,0 +1,65 @@
+.project-container {
+  transition-duration: 200ms;
+  margin-left: 0.5em;
+
+  margin-bottom: 1em;
+  border-radius: 6px;
+  overflow: hidden;
+
+
+  width: 18em;
+  height: 25em;
+}
+
+.project-container:hover {
+  transform: translateY(-3px);
+}
+
+.project-container .project-image {
+  height: 45%;
+}
+
+.project-container .project-image img {
+  width: 100%;
+}
+
+.project-container .project-info {
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 6px 6px;
+  padding: 0.5em;
+  padding-bottom: 0;
+  height: 50%;
+}
+
+.project-container .project-info p:nth-child(1){
+  letter-spacing: 4px;
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #000;
+}
+.project-container .project-info p:nth-child(3) {
+  font-size: 0.9rem;
+}
+
+.project-container .project-info h2 {
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+}
+
+.project-container .project-links {
+  font-size: 1.5rem;
+  text-align: end;
+  color: #000;
+}
+
+.project-container .project-links a {
+  margin-left: 0.5em;
+  color: #000d;
+}
+
+.project-container .project-links a:hover {
+  color: #0008;
+}
