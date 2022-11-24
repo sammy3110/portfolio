@@ -2,7 +2,11 @@
   /* border: 1px solid red; */
   /* padding: 1em; */
   display: flex;
+  background: url("../../../public/images/code.png");
+  background-position: 0 0;
+  animation: back 50s linear infinite;
 }
+
 .info .info-one,
 .info .info-two {
   /* border: 1px solid blue; */
@@ -45,6 +49,17 @@
   line-height: 1.7em;
   max-width: 70%;
 }
+
+/* Keyframes */
+
+@keyframes back {
+  100% {
+    background-position: -2000px 0;
+  }
+}
+
+
+/* -------------------------- MEDIA QUERIES -------------------------- */
 
 @media (max-width: 1100px) {
     .heading {
