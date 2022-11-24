@@ -1,0 +1,40 @@
+.skills-container {
+  /* overflow: hidden; */
+}
+
+.skills-container .heading {
+  margin-bottom: 5em;
+}
+
+.skills-container .heading::after {
+  content: url("../../../public/images/block.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.skills-container .icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.skills-container .icons img {
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 20px;
+  height: 6em;
+  background-color: #fff7;
+}
+
+.skills-container .icons img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+
+@media (hover: hover) {
+  .skills-container .icons img {
+    height: 7em;
+    filter: grayscale(100%);
+  }
+}
