@@ -44,7 +44,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="work-container wrapper">
+    <div id="work" className="work-container wrapper">
       <Heading left="2.7em" className="heading">
         <h1>work.</h1>
         <h2>work.</h2>

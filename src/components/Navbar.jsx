@@ -43,19 +43,35 @@ const Navbar = () => {
         </ul>
       </nav>
       <div ref={social} className="social">
-        <a rel="noreferrer" target={"_blank"} href="https://medium.com/@sudra_shyam">
+        <a
+          rel="noreferrer"
+          target={"_blank"}
+          href="https://medium.com/@sudra_shyam"
+        >
           <i className="fa-brands fa-medium"></i>
         </a>
 
-        <a rel="noreferrer" target={"_blank"} href="https://www.linkedin.com/in/shyam-sudra-7a052277/">
+        <a
+          rel="noreferrer"
+          target={"_blank"}
+          href="https://www.linkedin.com/in/shyam-sudra-7a052277/"
+        >
           <i className="fa-brands fa-linkedin"></i>
         </a>
 
-        <a rel="noreferrer" target={"_blank"} href="https://twitter.com/shyamsudra5">
+        <a
+          rel="noreferrer"
+          target={"_blank"}
+          href="https://twitter.com/shyamsudra5"
+        >
           <i className="fa-brands fa-twitter"></i>
         </a>
 
-        <a rel="noreferrer" target={"_blank"} href="https://github.com/sammy3110">
+        <a
+          rel="noreferrer"
+          target={"_blank"}
+          href="https://github.com/sammy3110"
+        >
           <i className="fa-brands fa-github"></i>
         </a>
       </div>

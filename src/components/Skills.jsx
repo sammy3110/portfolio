@@ -4,7 +4,7 @@ import { Heading } from "../components/styled/Heading.styled";
 
 const Skills = () => {
   return (
-    <div className="skills-container wrapper">
+    <div id="skills" className="skills-container wrapper">
       <Heading left="2.75em" className="heading">
         <h1>skills.</h1>
         <h2>skills.</h2>

@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --primary-color: #FBF8CC;
-  --secondary-color: #03045E;
-  --ternary-color: #F5EE84;
+  --primary-color: #fbf8cc;
+  --secondary-color: #03045e;
+  --ternary-color: #f5ee84;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -19,5 +19,43 @@ body {
 
 .wrapper {
   margin: 0 4em 3em 4em;
+}
+
+.scroll-top {
+  background-color: #0002;
+  border-radius: 6px;
+  padding: .1em .5em;
+  position: fixed;
+  font-size: 1.5rem;
+  bottom: 1em;
+  right: 1em;
+}
+
+.scroll-top i{
+  animation: scroll 2s ease-in-out infinite;
+}
+
+.scroll-top:hover {
+  cursor: pointer;
+}
+
+/* Keyframes */
+
+@keyframes scroll {
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(.1em);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  75%{
+    transform: translateY(-.1em);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
